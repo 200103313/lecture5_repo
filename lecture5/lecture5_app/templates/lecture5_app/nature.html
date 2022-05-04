@@ -1,0 +1,64 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static 'lecture5_app/css/nature.css' %}" href="history.css">
+    <title>{{title}}</title>
+</head>
+<body>
+    <div class="header">
+        <div><a target="_blank" href="{% url 'home' %}">home page</a></div>
+        <div><a target="_blank" href="{% url 'nature' %}">nature</a></div>
+        <div><a target="_blank" href="history.html">history</a></div>
+        <div><a target="_blank" href="{% url 'sport' %}">sport</a></div>
+        <div><a target="_blank" href="{% url 'traditions' %}">traditions</a></div>
+        <div><a target="_blank" href="{% url 'art' %}">art</a></div>
+        <div><a target="_blank" href="{% url 'food' %}">food</a></div>
+        <div><a target="_blank" href="{% url 'index' %}">posts</a></div>
+    </div>
+    <div class="people">
+        <div><a target="_blank" href="https://ru.wikipedia.org/wiki/%D0%A7%D0%B0%D1%80%D1%8B%D0%BD%D1%81%D0%BA%D0%B8%D0%B9_%D0%BA%D0%B0%D0%BD%D1%8C%D0%BE%D0%BD">Charyn Canyon</a></div>
+        <div><a target="_blank" href="https://ru.wikipedia.org/wiki/%D0%9A%D0%B0%D0%B8%D0%BD%D0%B4%D1%8B_(%D0%BE%D0%B7%D0%B5%D1%80%D0%BE)">Kaindy (lake)</a></div>
+        <div><a target="_blank" href="https://ru.wikipedia.org/wiki/%D0%91%D0%BE%D0%BB%D1%8C%D1%88%D0%BE%D0%B5_%D0%90%D0%BB%D0%BC%D0%B0%D1%82%D0%B8%D0%BD%D1%81%D0%BA%D0%BE%D0%B5_%D0%BE%D0%B7%D0%B5%D1%80%D0%BE">Big Almaty Lake</a></div>
+        <div><a target="_blank" href="https://ru.wikipedia.org/wiki/%D0%91%D0%BE%D1%80%D0%BE%D0%B2%D0%BE%D0%B5_(%D0%BE%D0%B7%D0%B5%D1%80%D0%BE)">Borovoe</a></div>
+    </div>
+    
+    <div class="main">
+        <img id="img" src="https://tengritravel.kz/userdata/news/2020/news_416698/thumb_m/photo_338294.jpeg" alt="Природа Казахстана">
+        <div class="text">
+            <h1 id="txt">Interesting about the nature of Kazakhstan</h1>
+            <hr></hr>
+        <h2 id="txt2"> The nature of Kazakhstan is amazing and diverse: here you can see beautiful flower steppes and majestic snow-capped mountains.<br>
+            With a population of 17 million people, most of the territory remains uninhabited. Vast steppes, deserts and mountains are habitats for many species of animals and birds.<br>
+            <br>
+            Relief and climate of Kazakhstan
+            <br>
+            The territory of the Republic is huge: from the Ural Mountains to Altai and Tarbagatai. The country is washed by the Aral and Caspian seas.
+            <br>
+            More than half of the territory is desert and semi-desert. The rest is occupied by steppes, forests and mountains. In the center is the so-called "yellow steppe" or Sary-Arka,<br>
+            in the north - the West Siberian Plain, in the west - the Subdural Plateau. The lowest point is the Karagie depression, and the highest point is Mount Khan-Tengri.<br>
+            Lakes and rivers are scattered among the mountain ranges and steppes: Zaisan, Zhasybay, Charyn, Ural, Ishim, etc.
+            <br>
+            The climate in the country is continental: warm summers and cold winters. There is little precipitation here: the areas are divided into arid and semi-arid.
+            <br>
+            Flora and fauna of Kazakhstan
+            <br>
+            The flora is represented by widespread and endangered species.
+            <br>
+            Often found plants:<br>
+            astragalus;<br>
+            sedge;<br>
+            goose onion;<br>
+            Ostrolodochnik and others.<br>
+            Rare species of flora include wild plants: apple trees, onions, grapes, tulips.
+            <br>
+            In the wild and in reserves throughout the country, you can see wolves, foxes, elks, corsacs, argali, manul, snow leopards, Eurasian lynx, etc.<br>
+            As of 2016, 125 animal species and 404 species of plants, fungi, lichens were included in the Red Book of Kazakhstan and algae.<br>
+            The news often contains information about the state of the nature of the Republic, as well as about what measures are being taken to save it.</h2>
+        </div>
+    </div>
+    <div>
+</body>
+</html>

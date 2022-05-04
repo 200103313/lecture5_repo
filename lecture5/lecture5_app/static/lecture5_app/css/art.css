@@ -1,0 +1,41 @@
+body{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background: #00abc218;
+    background-image: url(https://sputnik.kz/img/829/39/8293920_0:103:1017:678_1920x0_80_0_0_ee667723087d48e5e2fdc3365d817181.jpg);
+    background-repeat: repeat;
+    background-size: 100%;
+}
+.mySlides{
+    padding-bottom: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+    width: 25%;
+}
+.footer{
+    text-transform: uppercase;
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+    background-color:#00ABC2;
+    color: #FFEC2D;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    padding-top: 15px;
+}
+a { 
+    text-decoration: none;
+    color:#FFEC2D;
+    font-family:'Garamond'
+} 
+.txt{
+    padding-bottom: 310px;
+    height: 70px;
+    background-color:#00ABC2;
+    color: #FFEC2D;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}

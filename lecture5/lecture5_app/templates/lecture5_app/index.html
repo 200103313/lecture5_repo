@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+{% load static %}
+<html>
+    <head>
+        <title>Ваши истории и отзывы</title>
+        <link  href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+        crossorigin="anonymous" rel="stylesheet"/>
+    </head>
+    <body style="background-color: #00abc233;">
+        <nav class="navbar navbar-light" style="background-color:#00ABC2;text-transform: uppercase; font-family: 'Courier New', Courier, monospace;font-size: 25px;">
+            <a href="{% url 'add_page' %}" style="color:#FFEC2D;">registration</a>
+            <a href="{% url 'home' %}" style="color:#FFEC2D;">Home Page</a>
+            <a href="{% url 'nature' %}" style="color:#FFEC2D;">nature</a>
+            <a href="history.html" style="color:#FFEC2D;">history</a>
+            <a href="{% url 'sport' %}" style="color:#FFEC2D;">sport</a>
+            <a href="{% url 'traditions' %}" style="color:#FFEC2D;">traditions</a>
+            <a href="{% url 'art' %}" style="color:#FFEC2D;">art</a>
+            <a href="{% url 'food' %}" style="color:#FFEC2D;">food</a>
+            <a href="{% url 'index' %}" style="color:#FFEC2D;">posts</a>
+            <a href="{% url 'admin:index' %}" style="color:#FFEC2D;">Admin</a>
+            <a href="{% url 'upload-posts' %}" style="color:#FFEC2D;">Upload Posts</a>
+        </nav>
+        <br>
+{% block content %}
+<div class="card-columns">
+    {% for post in lecture5_app %}
+    <div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="{{ post.picture.url }}">
+  <div class="card-body">
+    <h5 class="card-title">{{ post.name }}</h5>
+    <p class="card-text">{{ post.describe }}</p>
+   <div class="card-footer bg-transparent border-dark">
+   <p class="card-title">{{post.author}}</p>
+   <center>
+       <a href="update/{{post.id}}" class="btn btn-warning" id = '{{post.id}}'>edit</a>
+       <a href="delete/{{post.id}}" class="btn btn-danger" id = '{{post.id}}'>delete</a>
+    </center>
+    </div>
+  </div>
+</div>
+    {% endfor %}
+</div>
+{% endblock %}
+</body>
+</html>

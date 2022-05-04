@@ -1,0 +1,53 @@
+body{
+    margin: 0 auto;
+    color: rgb(0, 0, 0);    
+}
+.header{
+    display: flex;
+    text-transform: uppercase;
+    color: #FFEC2D;
+    height: 50px;
+    justify-content: space-around;
+    background-color:#00ABC2;
+    padding: 50 100px;
+    padding-top: 15px;
+    font-size: 25px;
+    border-bottom: 1px solid black;
+    font-family: 'Courier New', Courier, monospace;
+}
+.image{
+    background: url(https://www.inform.kz/radmin/news/2020/06/04/200604085702547e.jpg);
+    height: 100vh;
+    min-height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #7e666669;
+    
+}
+
+a { 
+    text-decoration: none;
+    color: #FFEC2D;
+} 
+.begin{
+    margin-top: 0px;
+    padding-top: 30px;
+    text-align: center;
+    color: aliceblue;
+    font-size: 110%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+hr{
+    height: 20px;
+    border: none;
+    background-color: aliceblue;
+}
+
+.text{
+    text-align: left;
+    color: aliceblue;
+    font-size: 100%;
+    margin: 25px;
+    display: flex;
+}

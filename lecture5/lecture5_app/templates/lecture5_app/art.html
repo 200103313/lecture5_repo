@@ -1,0 +1,41 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>{{ title }}</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link type="text/css" href="{% static 'lecture5_app/css/art.css' %}" rel="stylesheet"/>
+    </head>
+    <body>
+    <div class="txt">
+        <h1>Art in Kazakhstan</h1>
+        <h2>In the culture of the Sakas, Huns and Usuns, there are images of real and fantastic animals (the so-called "animal style").<br>
+            In the objects of material culture of the Middle Ages, there was a painting of clay vessels, weapons, horse utensils.<br>
+            Ch. Valikhanov was the first Kazakh professional painter. Traveling a lot, studying the history and culture of the<br>
+            Kazakhs and Kirghiz, in his diaries he made sketches of people and nature that were distinguished by the brightness<br>
+            of life observations.</h2>
+    </div>
+    <hr>
+        <div class="SlideShow">
+            <img class="mySlides" src="https://esquire.kz/wp-content/uploads/2019/01/44828933_353579045385575_4680795564093210624_o-1024x683.jpg">
+            <img class="mySlides" src="https://total.kz/storage/b2/b23ab10b3cdc53e9697e7a24d9147750_resize_w_830_h_465.jpg">
+            <img class="mySlides" src="https://virtualrm.spb.ru/files/images/%20%D0%93.%20%D0%9A%D0%B0%D0%B7%D0%B0%D1%85%D1%81%D0%BA%D0%B8%D0%B9%20%D0%B2%D0%B0%D0%BB%D1%8C%D1%81.jpg">
+            <img class="mySlides" src="https://s.inalmaty.kz/section/afisha_event/upload/pers/125/img/afisha/000/000/005/26903775_1655421507814396_6397342610245012849_n5a65c2ebe8dd2.jpg">
+            <img class="mySlides" src="https://sxodim.com/uploads/astana/2016/03/optimized/image22_545x305-q-85.jpg">
+            <img class="mySlides" src="https://cdn.nur.kz/images/1120x630/pogudx5b7o4m7ddma.jpeg">
+            <img class="mySlides" src="https://static.365info.kz/uploads/2016/01/6-19-e1452757771284.jpg">
+        </div>
+        <hr>
+        <div class="footer">
+            <div><a target="_blank" href="{% url 'add_page' %}">registration</a></div>
+            <div><a target="_blank" href="{% url 'home' %}">home page</a></div>
+            <div><a target="_blank" href="{% url 'nature' %}">nature</a></div>
+            <div><a target="_blank" href="history.html">history</a></div>
+            <div><a target="_blank" href="{% url 'sport' %}">sport</a></div>
+            <div><a target="_blank" href="{% url 'traditions' %}">traditions</a></div>
+            <div><a target="_blank" href="{% url 'art' %}">art</a></div>
+            <div><a target="_blank" href="{% url 'food' %}">food</a></div>
+            <div><a target="_blank" href="{% url 'index' %}">posts</a></div>
+        </div>
+    </body>
+</html>
