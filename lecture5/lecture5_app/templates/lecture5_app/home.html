@@ -1,0 +1,61 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>{{ title }}</title>
+        <link type="text/css" href="{% static 'lecture5_app/css/styles.css' %}" rel="stylesheet"/>
+    </head>
+    <body>
+        <div class="header">
+            <div><a target="_blank" href="{% url 'add_page' %}">registration</a></div>
+            <div><a target="_blank" href="{% url 'home' %}">home page</a></div>
+            <div><a target="_blank" href="{% url 'nature' %}">nature</a></div>
+            <div><a target="_blank" href="history.html">history</a></div>
+            <div><a target="_blank" href="{% url 'sport' %}">sport</a></div>
+            <div><a target="_blank" href="{% url 'traditions' %}">traditions</a></div>
+            <div><a target="_blank" href="{% url 'art' %}">art</a></div>
+            <div><a target="_blank" href="{% url 'food' %}">food</a></div>
+            <div><a target="_blank" href="{% url 'index' %}">posts</a></div>
+            {% block content %}
+            
+            <div>
+                {{ name.title }}
+            </div>
+            {% endblock %}
+        </div>
+        
+        <div class="main">
+            <div class="image">
+            <div class="begin">
+                <h1>KAZAKHSTAN</h1>
+            <h2>Here we want to introduce you to such a beautiful country - Kazakhstan</h2>
+            </div>
+            <hr></hr>
+            <div class="text">
+                <span>Kazakhstan (Kazakhstan, Qazaqstan), the official name is the Republic of Kazakhstan (abbreviation RK)<br>
+                    is a state in the center of Eurasia, most of which belongs to Asia, the smaller part to Europe.<br>
+                    The area of the territory is 2,724,902 km².<br>
+                    The population, according to the estimate of the State Statistics Committee as of January 1, 2022, is 19,082,467 people.<br>
+                    The population density is one of the lowest in the world: less than 7 people per square kilometer.<br>
+                    The capital is Nur-Sultan. The largest city with a population of over 2 million people is Alma-Ata.<br>
+                    It ranks 9th in the world in terms of territory, 2nd among post-Soviet countries (after Russia), 42nd in terms of GDP PPP and 64th in terms of population.<br>
+                    <br>
+                    Kazakhstan is officially a democratic, secular, unitary, constitutional republic with a diverse cultural heritage.<br>
+                    The terrain of Kazakhstan includes plains, steppes, taiga, rocky canyons, hills, deltas, snow-capped mountains and deserts.<br>
+                    The economy is dominated by the hydrocarbon industry, and employment is highest in the service sector.<br>
+                    Now the government is making efforts to diversify and plans to switch the national industry to the production of goods with a high added value.<br>
+                    <br>
+                    It is located between the Caspian Sea, the Lower Volga region, the Urals, Siberia, China and Central Asia.<br>
+                    It borders in the north and west with Russia (the length of the border is 7548.1 km), in the east with China (1782.8 km),<br>
+                    in the south with Kyrgyzstan (1241.6 km), Uzbekistan (2351.4 km) and Turkmenistan (426 km).<br>
+                    From the eastern borders of Kazakhstan to the western borders of Mongolia, the distance is about 40 km.<br>
+                    The total length of land borders is 13,392.6 km. The length of the country from east to west is 2963 km, and from north to south - 1652 km.<br>
+                    It is the largest country of the Turkic Council in terms of territory. It is washed by the waters of the inland Caspian and Aral Seas.<br>
+                    It has no access to the sea and is the largest country in the world with such a feature.
+                </span>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Kazakhstan_National_Emblem.png" width="250" height="250" alt="герб Республики Казахстан">
+            </div>
+        </div>
+        </div>
+    </body>
+</html>

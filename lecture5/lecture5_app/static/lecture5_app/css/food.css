@@ -1,0 +1,35 @@
+body{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color:#00ABC2;
+}
+.products{
+    display: flex;
+    color: #FFEC2D;
+    padding: 20px;
+}
+.third{
+    padding-left: 50px;
+    padding-top: 100px;
+    font-size: 20px;
+}
+a { 
+    text-decoration: none;
+    font-family:'Garamond';
+    color: #FFEC2D;
+} 
+.th{
+    display: flex;
+    padding-top: 130px;
+    font-size: 15px;
+}
+.th2{
+    padding-left: 50px;
+}
+.header{
+    text-transform: uppercase;
+}
+.distance{
+    padding: 250px;
+}

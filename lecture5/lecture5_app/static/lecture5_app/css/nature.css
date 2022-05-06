@@ -1,0 +1,44 @@
+body{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background: #00abc218;
+}
+
+.header{
+    text-transform: uppercase;
+    display: flex;
+    height: 50px;
+    justify-content: space-around;
+    background-color:#00ABC2;
+    padding: 50 100px;
+    padding-top: 15px;
+    font-size: 25px;
+    color: #FFEC2D;
+    border-bottom: 1px solid black;
+    font-family: 'Courier New', Courier, monospace;
+}
+a { 
+    text-decoration: none;
+    color: #FFEC2D;
+} 
+
+.people{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.main{
+    text-align: center;
+}
+
+#img{
+    position: relative;
+    width: 50%;
+    height: 50%;
+}
+.text{
+    background-color: #00ABC2;
+    color:#FFEC2D;
+}

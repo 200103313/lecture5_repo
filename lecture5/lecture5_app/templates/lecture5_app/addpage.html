@@ -1,0 +1,29 @@
+{% load static %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link type="text/css" href="{% static 'lecture5_app/css/addpage.css' %}" rel="stylesheet"/>
+    <title>Регистрация</title>
+</head>
+<body>
+    <div class="header">
+        <div><a target="_blank" href="{% url 'add_page' %}">registration</a></div>
+        <div><a target="_blank" href="{% url 'home' %}">home page</a></div>
+        <div><a target="_blank" href="{% url 'nature' %}">nature</a></div>
+        <div><a target="_blank" href="history.html">history</a></div>
+        <div><a target="_blank" href="{% url 'sport' %}">sport</a></div>
+        <div><a target="_blank" href="{% url 'traditions' %}">traditions</a></div>
+        <div><a target="_blank" href="{% url 'art' %}">art</a></div>
+        <div><a target="_blank" href="{% url 'food' %}">food</a></div>
+        <div><a target="_blank" href="{% url 'index' %}">posts</a></div>
+    </div>
+<h1>{{title}}</h1>
+<form action = "{% url 'add_page' %}" method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Зарегистрироваться</button>
+</form>
+{% endblock %}
+</body>
+</html>

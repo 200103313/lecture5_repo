@@ -1,0 +1,66 @@
+body{
+    margin: 0 auto;
+    color: rgb(0, 0, 0);    
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    background-color:rgb(151, 184, 192);
+    text-transform: uppercase;
+    padding: 25px 100px;
+}
+.image{
+    background: url(almaty1);
+    height: 100vh;
+    min-height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #7e666669;
+    
+}
+.begin{
+    margin-top: 0px;
+    padding-top: 30px;
+    text-align: center;
+    color: aliceblue;
+    font-size: 110%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+hr{
+    height: 20px;
+    border: none;
+    background-color: aliceblue;
+}
+
+.text{
+    text-align: left;
+    color: aliceblue;
+    font-size: 100%;
+    margin: 25px;
+    display: flex;
+}
+.btn{
+    margin: 0;
+    position: relative;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+@media only screen and (max-width: 768px){
+    [class*="image"] {
+        height:100%;
+    }
+    [class*="header"]{
+        padding: 10px;
+        display:block;
+    }
+    [class*="begin"]{
+        font-size:70%;
+    }
+    [class*="text"]{
+        font-size:100%;
+        margin-top: 0px;
+        display: inline-table;
+    }
+}
